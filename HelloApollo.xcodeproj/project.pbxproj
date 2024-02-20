@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD9635732B84825200AEC578 /* HelloApolloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635722B84825200AEC578 /* HelloApolloApp.swift */; };
+		AD9635752B84825200AEC578 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635742B84825200AEC578 /* ContentView.swift */; };
+		AD9635772B84825300AEC578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9635762B84825300AEC578 /* Assets.xcassets */; };
+		AD96357A2B84825300AEC578 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9635792B84825300AEC578 /* Preview Assets.xcassets */; };
+		AD9635822B84829400AEC578 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = AD9635812B84829400AEC578 /* Apollo */; };
+		AD9635842B84836600AEC578 /* apollo-codegen-config.json in Resources */ = {isa = PBXBuildFile; fileRef = AD9635832B84836600AEC578 /* apollo-codegen-config.json */; };
+		AD9635C12B84840F00AEC578 /* schema.graphqls in Resources */ = {isa = PBXBuildFile; fileRef = AD9635AC2B84840F00AEC578 /* schema.graphqls */; };
+		AD9635C22B84840F00AEC578 /* Query.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635AF2B84840F00AEC578 /* Query.graphql.swift */; };
+		AD9635C32B84840F00AEC578 /* Species.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635B22B84840F00AEC578 /* Species.graphql.swift */; };
+		AD9635C42B84840F00AEC578 /* Person.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635B32B84840F00AEC578 /* Person.graphql.swift */; };
+		AD9635C52B84840F00AEC578 /* Root.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635B42B84840F00AEC578 /* Root.graphql.swift */; };
+		AD9635C62B84840F00AEC578 /* FilmsConnection.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635B52B84840F00AEC578 /* FilmsConnection.graphql.swift */; };
+		AD9635C72B84840F00AEC578 /* Starship.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635B62B84840F00AEC578 /* Starship.graphql.swift */; };
+		AD9635C82B84840F00AEC578 /* FilmSpeciesConnection.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635B72B84840F00AEC578 /* FilmSpeciesConnection.graphql.swift */; };
+		AD9635C92B84840F00AEC578 /* Planet.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635B82B84840F00AEC578 /* Planet.graphql.swift */; };
+		AD9635CA2B84840F00AEC578 /* Vehicle.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635B92B84840F00AEC578 /* Vehicle.graphql.swift */; };
+		AD9635CB2B84840F00AEC578 /* Film.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635BA2B84840F00AEC578 /* Film.graphql.swift */; };
+		AD9635CC2B84840F00AEC578 /* SchemaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635BB2B84840F00AEC578 /* SchemaConfiguration.swift */; };
+		AD9635CD2B84840F00AEC578 /* SchemaMetadata.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635BC2B84840F00AEC578 /* SchemaMetadata.graphql.swift */; };
+		AD9635CE2B84840F00AEC578 /* Node.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635BE2B84840F00AEC578 /* Node.graphql.swift */; };
+		AD9635CF2B84840F00AEC578 /* SW.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635BF2B84840F00AEC578 /* SW.graphql.swift */; };
+		AD9635D02B84840F00AEC578 /* AllFilmsQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = AD9635C02B84840F00AEC578 /* AllFilmsQuery.graphql */; };
+		AD9635D22B84844B00AEC578 /* GraphQLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635D12B84844B00AEC578 /* GraphQLClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AD96356F2B84825200AEC578 /* HelloApollo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloApollo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9635722B84825200AEC578 /* HelloApolloApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloApolloApp.swift; sourceTree = "<group>"; };
+		AD9635742B84825200AEC578 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD9635762B84825300AEC578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD9635792B84825300AEC578 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD9635832B84836600AEC578 /* apollo-codegen-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "apollo-codegen-config.json"; sourceTree = "<group>"; };
+		AD9635AC2B84840F00AEC578 /* schema.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
+		AD9635AF2B84840F00AEC578 /* Query.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.graphql.swift; sourceTree = "<group>"; };
+		AD9635B22B84840F00AEC578 /* Species.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Species.graphql.swift; sourceTree = "<group>"; };
+		AD9635B32B84840F00AEC578 /* Person.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.graphql.swift; sourceTree = "<group>"; };
+		AD9635B42B84840F00AEC578 /* Root.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Root.graphql.swift; sourceTree = "<group>"; };
+		AD9635B52B84840F00AEC578 /* FilmsConnection.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmsConnection.graphql.swift; sourceTree = "<group>"; };
+		AD9635B62B84840F00AEC578 /* Starship.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Starship.graphql.swift; sourceTree = "<group>"; };
+		AD9635B72B84840F00AEC578 /* FilmSpeciesConnection.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmSpeciesConnection.graphql.swift; sourceTree = "<group>"; };
+		AD9635B82B84840F00AEC578 /* Planet.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.graphql.swift; sourceTree = "<group>"; };
+		AD9635B92B84840F00AEC578 /* Vehicle.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.graphql.swift; sourceTree = "<group>"; };
+		AD9635BA2B84840F00AEC578 /* Film.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Film.graphql.swift; sourceTree = "<group>"; };
+		AD9635BB2B84840F00AEC578 /* SchemaConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaConfiguration.swift; sourceTree = "<group>"; };
+		AD9635BC2B84840F00AEC578 /* SchemaMetadata.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaMetadata.graphql.swift; sourceTree = "<group>"; };
+		AD9635BE2B84840F00AEC578 /* Node.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.graphql.swift; sourceTree = "<group>"; };
+		AD9635BF2B84840F00AEC578 /* SW.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SW.graphql.swift; sourceTree = "<group>"; };
+		AD9635C02B84840F00AEC578 /* AllFilmsQuery.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AllFilmsQuery.graphql; sourceTree = "<group>"; };
+		AD9635D12B84844B00AEC578 /* GraphQLClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQLClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD96356C2B84825200AEC578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9635822B84829400AEC578 /* Apollo in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD9635662B84825200AEC578 = {
+			isa = PBXGroup;
+			children = (
+				AD9635AB2B84840F00AEC578 /* SW */,
+				AD9635832B84836600AEC578 /* apollo-codegen-config.json */,
+				AD9635712B84825200AEC578 /* HelloApollo */,
+				AD9635702B84825200AEC578 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD9635702B84825200AEC578 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD96356F2B84825200AEC578 /* HelloApollo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD9635712B84825200AEC578 /* HelloApollo */ = {
+			isa = PBXGroup;
+			children = (
+				AD9635D12B84844B00AEC578 /* GraphQLClient.swift */,
+				AD9635722B84825200AEC578 /* HelloApolloApp.swift */,
+				AD9635742B84825200AEC578 /* ContentView.swift */,
+				AD9635762B84825300AEC578 /* Assets.xcassets */,
+				AD9635782B84825300AEC578 /* Preview Content */,
+			);
+			path = HelloApollo;
+			sourceTree = "<group>";
+		};
+		AD9635782B84825300AEC578 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AD9635792B84825300AEC578 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD9635AB2B84840F00AEC578 /* SW */ = {
+			isa = PBXGroup;
+			children = (
+				AD9635AC2B84840F00AEC578 /* schema.graphqls */,
+				AD9635AD2B84840F00AEC578 /* Operations */,
+				AD9635B02B84840F00AEC578 /* Schema */,
+				AD9635BF2B84840F00AEC578 /* SW.graphql.swift */,
+				AD9635C02B84840F00AEC578 /* AllFilmsQuery.graphql */,
+			);
+			path = SW;
+			sourceTree = "<group>";
+		};
+		AD9635AD2B84840F00AEC578 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				AD9635AE2B84840F00AEC578 /* Queries */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		AD9635AE2B84840F00AEC578 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				AD9635AF2B84840F00AEC578 /* Query.graphql.swift */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		AD9635B02B84840F00AEC578 /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				AD9635B12B84840F00AEC578 /* Objects */,
+				AD9635BB2B84840F00AEC578 /* SchemaConfiguration.swift */,
+				AD9635BC2B84840F00AEC578 /* SchemaMetadata.graphql.swift */,
+				AD9635BD2B84840F00AEC578 /* Interfaces */,
+			);
+			path = Schema;
+			sourceTree = "<group>";
+		};
+		AD9635B12B84840F00AEC578 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				AD9635B22B84840F00AEC578 /* Species.graphql.swift */,
+				AD9635B32B84840F00AEC578 /* Person.graphql.swift */,
+				AD9635B42B84840F00AEC578 /* Root.graphql.swift */,
+				AD9635B52B84840F00AEC578 /* FilmsConnection.graphql.swift */,
+				AD9635B62B84840F00AEC578 /* Starship.graphql.swift */,
+				AD9635B72B84840F00AEC578 /* FilmSpeciesConnection.graphql.swift */,
+				AD9635B82B84840F00AEC578 /* Planet.graphql.swift */,
+				AD9635B92B84840F00AEC578 /* Vehicle.graphql.swift */,
+				AD9635BA2B84840F00AEC578 /* Film.graphql.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		AD9635BD2B84840F00AEC578 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				AD9635BE2B84840F00AEC578 /* Node.graphql.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD96356E2B84825200AEC578 /* HelloApollo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD96357D2B84825300AEC578 /* Build configuration list for PBXNativeTarget "HelloApollo" */;
+			buildPhases = (
+				AD96356B2B84825200AEC578 /* Sources */,
+				AD96356C2B84825200AEC578 /* Frameworks */,
+				AD96356D2B84825200AEC578 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloApollo;
+			packageProductDependencies = (
+				AD9635812B84829400AEC578 /* Apollo */,
+			);
+			productName = HelloApollo;
+			productReference = AD96356F2B84825200AEC578 /* HelloApollo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD9635672B84825200AEC578 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					AD96356E2B84825200AEC578 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = AD96356A2B84825200AEC578 /* Build configuration list for PBXProject "HelloApollo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD9635662B84825200AEC578;
+			packageReferences = (
+				AD9635802B84829400AEC578 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = AD9635702B84825200AEC578 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD96356E2B84825200AEC578 /* HelloApollo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD96356D2B84825200AEC578 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9635C12B84840F00AEC578 /* schema.graphqls in Resources */,
+				AD9635D02B84840F00AEC578 /* AllFilmsQuery.graphql in Resources */,
+				AD9635842B84836600AEC578 /* apollo-codegen-config.json in Resources */,
+				AD96357A2B84825300AEC578 /* Preview Assets.xcassets in Resources */,
+				AD9635772B84825300AEC578 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD96356B2B84825200AEC578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9635752B84825200AEC578 /* ContentView.swift in Sources */,
+				AD9635C62B84840F00AEC578 /* FilmsConnection.graphql.swift in Sources */,
+				AD9635CF2B84840F00AEC578 /* SW.graphql.swift in Sources */,
+				AD9635CD2B84840F00AEC578 /* SchemaMetadata.graphql.swift in Sources */,
+				AD9635CA2B84840F00AEC578 /* Vehicle.graphql.swift in Sources */,
+				AD9635C82B84840F00AEC578 /* FilmSpeciesConnection.graphql.swift in Sources */,
+				AD9635C32B84840F00AEC578 /* Species.graphql.swift in Sources */,
+				AD9635C52B84840F00AEC578 /* Root.graphql.swift in Sources */,
+				AD9635C72B84840F00AEC578 /* Starship.graphql.swift in Sources */,
+				AD9635D22B84844B00AEC578 /* GraphQLClient.swift in Sources */,
+				AD9635CE2B84840F00AEC578 /* Node.graphql.swift in Sources */,
+				AD9635CC2B84840F00AEC578 /* SchemaConfiguration.swift in Sources */,
+				AD9635C22B84840F00AEC578 /* Query.graphql.swift in Sources */,
+				AD9635732B84825200AEC578 /* HelloApolloApp.swift in Sources */,
+				AD9635C92B84840F00AEC578 /* Planet.graphql.swift in Sources */,
+				AD9635CB2B84840F00AEC578 /* Film.graphql.swift in Sources */,
+				AD9635C42B84840F00AEC578 /* Person.graphql.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AD96357B2B84825300AEC578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD96357C2B84825300AEC578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD96357E2B84825300AEC578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HelloApollo/Preview Content\"";
+				DEVELOPMENT_TEAM = 97A8B2WE2P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = winebarrel.HelloApollo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD96357F2B84825300AEC578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HelloApollo/Preview Content\"";
+				DEVELOPMENT_TEAM = 97A8B2WE2P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = winebarrel.HelloApollo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD96356A2B84825200AEC578 /* Build configuration list for PBXProject "HelloApollo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD96357B2B84825300AEC578 /* Debug */,
+				AD96357C2B84825300AEC578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD96357D2B84825300AEC578 /* Build configuration list for PBXNativeTarget "HelloApollo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD96357E2B84825300AEC578 /* Debug */,
+				AD96357F2B84825300AEC578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD9635802B84829400AEC578 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD9635812B84829400AEC578 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD9635802B84829400AEC578 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AD9635672B84825200AEC578 /* Project object */;
+}

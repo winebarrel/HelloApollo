@@ -1,0 +1,41 @@
+{
+  "schemaNamespace": "SW",
+  "input": {
+    "operationSearchPaths": [
+      "**/*.graphql"
+    ],
+    "schemaSearchPaths": [
+      "**/*.graphqls"
+    ]
+  },
+  "output": {
+    "testMocks": {
+      "none": {}
+    },
+    "schemaTypes": {
+      "path": "./SW",
+      "moduleType": {
+        "embeddedInTarget": {
+          "name": "HelloApollo"
+        }
+      }
+    },
+    "operations": {
+      "inSchemaModule": {}
+    }
+  },
+  "schemaDownloadConfiguration": {
+    "downloadMethod": {
+      "introspection": {
+        "endpointURL": "https://swapi-graphql.netlify.app/.netlify/functions/index",
+        "httpMethod": {
+          "POST": {}
+        },
+        "includeDeprecatedInputValues": false,
+        "outputFormat": "SDL"
+      }
+    },
+    "headers": [],
+    "outputPath": "./SW/schema.graphqls"
+  }
+}
